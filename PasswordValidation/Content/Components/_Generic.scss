@@ -1,0 +1,73 @@
+﻿html {
+    background: url(/Content/Images/header-bg.png) top center repeat-x #17363f;
+    margin:0;
+    padding:0;
+    font-family:$font-family;
+    height:100%;
+}
+
+body {
+    margin-top: 300px;
+    background: #17363f;
+}
+
+p, ul, ol {
+    color:#fff;
+    font-size:20px;
+}
+
+h1, h2, h3 {
+    font-weight:bold;
+    color:$heading-dark-color;
+
+    &.light-font {
+        color:$heading-light-color;
+    }
+}
+
+h1 {
+    font-size: 38px;
+    line-height: 1.15;
+    margin: 0 0 20px;
+}
+
+section {
+    position:relative;
+
+    .row {
+        max-width:1440px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+}
+
+ul {
+    padding:0;
+    margin:0;
+    list-style:none;
+
+    li {
+        padding:10px 0;
+        border-bottom:1px solid rgba(255,255,255,.1);
+
+        .fa-times-circle {
+            color:$heading-dark-color;
+        }
+
+        .fa-check-circle {
+            color:$heading-light-color;
+        }
+    }
+}
+
+.btn {
+    &.btn-primary {
+        background:$form-button-color;
+        border-color: $form-button-color;
+        color:#fff;
+        &:hover {
+            background:$heading-dark-color;
+            border-color:$heading-dark-color;
+        }
+    }
+}

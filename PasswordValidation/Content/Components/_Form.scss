@@ -1,0 +1,27 @@
+﻿form {
+    margin-top: 20px;
+
+    input[type="password"] {
+        background: $form-input-color;
+        color: #fff;
+        padding: 10px;
+        border-radius: 2px;
+        width: 100%;
+        margin-bottom: 15px;
+        border: 0;
+        border-radius: 2px;
+    }
+
+    .btn-submit {
+        color: #fff;
+        background: $form-button-color;
+        font-weight: 600;
+        width: 100%;
+        padding: 10px;
+
+        &:hover {
+            background: $heading-dark-color;
+            border-color: $heading-dark-color;
+        }
+    }
+}

@@ -1,0 +1,42 @@
+﻿@{
+    ViewBag.Title = "Set 1";
+}
+
+
+<section class="container-fluid">
+
+    <div class="row mt-3">
+        <div class="col-12 col-md-6">
+            <h1>Please enter your new password using the validation tool below:</h1>
+            <form>
+
+                <input type="password" name="Password" placeholder="Enter New Password" />
+
+                <input type="password" name="ConfirmPassword" placeholder="Confirm New Password" />
+
+                <button type="submit" class="btn btn-submit">
+                    Save New Password
+                </button>
+
+            </form>
+        </div>
+
+        <div class="col-12 col-md-5 offset-md-1" id="validation-results">
+            <ul>
+                <li><i class="fas fa-times-circle"></i> New Passwords match</li>
+                <li><i class="fas fa-times-circle"></i> Minimum of 10 characters in length</li>
+                <li><i class="fas fa-times-circle"></i> Contains an uppercase character</li>
+                <li><i class="fas fa-times-circle"></i> Contains a lowercase character</li>
+            </ul>
+        </div>
+    </div>
+
+</section>
+
+@section scripts {
+    <script>
+        $(document).on('keyup', 'form', function () {
+            UIFunctions.Forms.ValidatePassword($(this), 1);
+        });
+    </script>
+}
