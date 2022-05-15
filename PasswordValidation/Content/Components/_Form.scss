@@ -1,7 +1,7 @@
 ﻿form {
     margin-top: 20px;
 
-    input[type="password"] {
+    input {
         background: $form-input-color;
         color: #fff;
         padding: 10px;
@@ -22,6 +22,20 @@
         &:hover {
             background: $heading-dark-color;
             border-color: $heading-dark-color;
+        }
+    }
+
+    .form-field {
+        position: relative;
+        width: 100%;
+
+        .fas {
+            position: absolute;
+            right: 10px;
+            color: rgba(255,255,255,.3);
+            font-size: 30px;
+            top: 7px;
+            cursor:pointer;
         }
     }
 }

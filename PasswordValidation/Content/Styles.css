@@ -7295,7 +7295,7 @@ ul {
 
 form {
   margin-top: 20px; }
-  form input[type="password"] {
+  form input {
     background: rgba(255, 255, 255, 0.2);
     color: #fff;
     padding: 10px;
@@ -7313,3 +7313,13 @@ form {
     form .btn-submit:hover {
       background: #0d5a63;
       border-color: #0d5a63; }
+  form .form-field {
+    position: relative;
+    width: 100%; }
+    form .form-field .fas {
+      position: absolute;
+      right: 10px;
+      color: rgba(255, 255, 255, 0.3);
+      font-size: 30px;
+      top: 7px;
+      cursor: pointer; }
